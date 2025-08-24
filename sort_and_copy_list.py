@@ -1,5 +1,5 @@
 thislist= ["apple", "pear", "pawpaw","mango", "banana"]
-thislist.sort()
+'''thislist.sort()
 print(thislist)
 
 #to sort descending
@@ -10,5 +10,18 @@ print(thislist)
 thislist.sort(key=str.lower)
 
 #to reverse the order
-thislist.reverse()
+thislist.reverse()'''
+
+newlist= thislist.copy()
+print (newlist)
+
+#list addition mathods
+list1= ["a", "b", "c", "d"]
+list2= [1,2,3,4]
+list3= list1 + list2
+print(list3)
+
+for x in list1:
+    list2.append(x)
+print(list2)
 
