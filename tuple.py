@@ -47,5 +47,6 @@ print (tuple3)
 tuple4= tuple3 * 2
 print(tuple4)
 
+print("name" in tuple4)
 
 

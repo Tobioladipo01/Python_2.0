@@ -25,3 +25,6 @@ for x in list1:
     list2.append(x)
 print(list2)
 
+print ("a" in list1)
+
+
