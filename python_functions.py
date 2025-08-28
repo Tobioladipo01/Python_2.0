@@ -60,3 +60,18 @@ keyword(x=5)
 def practice(a,b,/,*,c,d):
     print (a+b+c+d)
 practice (3,4,c=5,d=6)
+
+
+#recursion. you call the function inside the function block before calling outside
+def walk(steps):
+    if steps == 0:
+        return
+    walk(steps -1)
+    print (f"i have taken {steps} number of steps")
+walk(50)
+
+#using for loop
+def walks(steps):
+    for x in range (1, steps + 1):
+        print (f"i have taken {x} steps")
+walks(50)
