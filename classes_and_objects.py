@@ -33,6 +33,39 @@ class Person:
         self.name = name
         self.age = age
 
+    def intro (self):
+        print (f"my name is {self.name}")
+
 p1 = Person("Tobi", 23)
 print (p1.name)
+p1.intro()
 
+
+class BankAccount:
+    def __init__(self, owner, balance=0):
+        self.owner=owner
+        self.balance= int(balance)
+        self.age= 22
+    
+    def balance (self):
+        print("your new balance is self.balance")
+    def deposit (self, amount):
+        balance = int(self.balance + amount)
+        print (f"amount of {amount} have been deposited to your account. new balance is {balance}")
+    def withdraw (self, amount):
+        balance= int (self.balance-amount)
+        print (f"amount of {amount} have been withdrawn from your account. new balance is {balance}")
+    
+Tobi = BankAccount ("Tobi", 1000000)
+Tobi.deposit(500000)
+print(Tobi.owner)
+
+#to modify an object
+Tobi.age = 23
+print(Tobi.age)
+# to delete, you use del Tobi.age
+# to delete object, use del Tobi
+
+#classes cannot be left empty if you class dont have a content, use pass
+class Empty:
+    pass
