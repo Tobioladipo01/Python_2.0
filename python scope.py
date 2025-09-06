@@ -53,3 +53,6 @@ def myfunc1():
     return name
 print(myfunc1())
 
+x=dir(myfunc1)
+print(x)
+
