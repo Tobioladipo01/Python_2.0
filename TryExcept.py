@@ -32,3 +32,13 @@ except:
     print("Something went wrong")
 finally:
     print("try except code ended")
+
+
+# you use the raise to define the error yourself
+'''x=-1
+if x<0:
+    raise Exception("Sorry no numbers below zero")'''
+
+c = "hello"
+if c!= int:
+    raise Exception("Input a number")
